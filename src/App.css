@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
-}
+.footer {
+  background: linear-gradient(326.02deg, #398bf5 15.05%, #45b7f4 91.72%);
+  padding: 100px 120px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .spacing {
+    height: 50px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px; 
+}
+
+.footer-body-list-pages,
+.footer-body-list-socials {
+    flex: 1; 
+    padding: 0 10px; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.title {
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+}
+
+.title-large {
+  font-size: 60px;
+}
+
+@font-face {
+  font-family: 'Monument Extended';
+  src: url(/public/fonts/MonumentExtended-Regular.otf) format('opentype');
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(326.02deg, #398bf5 15.05%, #45b7f4 91.72%);
+}
+
+.btn {
+  padding: 24px 64px;
+  font-family: 'Monument Extended';
+  text-transform: uppercase;
+  border: 0;
+}
+
+.btn.white {
+color: var(--primary);
+left: 0; 
+top: 0; 
+width: 25%; 
+height: 100%; 
+background-color: #ffffff; 
+color: lightblue; 
+border: none; 
+outline: none;
+cursor: pointer;
+padding: auto;
+margin: auto;
+text-align: left;
+grid-column: span 1;
+}
+
+.white {
+  background: #ffffff;
+}
+
+.footer-body-list-title{
+  text-align: left;
+  color: white;
+  font-family: 'Monument Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: auto;
+  text-align: left;
+}
+
+.footer-body-list-pages{
+  text-align: left;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: auto;
+  list-style: none;
+}
+
+.footer-menu-item{
+  list-style: none;
+  text-align: left;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: auto;
+  list-style: none;
+}
+
+.footer-menu-item li {
+  margin-bottom: 5px;
+}
+
+.footer-container {
+  padding-bottom: 2vw;
+  padding-top: 5vw
+}
+
+.footer-form-title {
+  font-family: Monument Extended,sans-serif;
+  font-size: 3.5vw;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2vw;
+  text-transform: uppercase
+}
+
+
+.footer-foot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+
+}
+
+.footer-foot-copyright,
+.footer-foot-phone,
+.footer-foot-address,
+.footer-foot-email {
+  grid-column: span 1;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: auto;
+}
+
+.footer-form {
+  background: linear-gradient(326.02deg, #398bf5 15.05%, #45b7f4 91.72%);;
+  padding: 100px 120px;
+}
+
+.footer-form-container{
+  padding-bottom: 2vw;
+  padding-top: 5vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: auto;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-menu-item {
+  padding: 0;
+  
+}
+
+.footer-menu-item li {
+  margin-bottom: 5px;
+}
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu-column {
+  flex: 1;
+  padding: 2;
+  margin: 2;
+  list-style: none;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.footer-menu-item li {
+  margin-bottom: 5px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: auto;
+}
+
+.footer-menu-item li::before {
+  
+  margin-right: 5px;
+}
+
+.footer-menu-item li:first-child::before {
+  content: none;
+}
+
+.footer-body-list-title{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
